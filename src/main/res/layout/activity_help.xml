@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.team4.smartwatch.helpActivity">
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="HELP MENU"
+        android:textColor="@color/text_white"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/picturemode"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/helpText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gallery" />
+
+    <ImageView
+        android:id="@+id/talk"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/picturemode"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/speakericon" />
+
+    <ImageView
+        android:id="@+id/hear"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/picturemode"
+        android:layout_below="@id/picturemode"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ear" />
+
+    <ImageView
+        android:id="@+id/emergency"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/talk"
+        android:layout_alignTop="@id/hear"
+        android:src="@drawable/sos" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/hear"
+        android:layout_below="@id/hear"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/settingsios" />
+
+    <ImageView
+        android:id="@+id/userguide"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@id/settings"
+        android:layout_alignLeft="@id/emergency"
+        android:src="@drawable/usermanual" />
+
+    <ImageView
+        android:id="@+id/customercare"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cc" />
+
+</RelativeLayout>

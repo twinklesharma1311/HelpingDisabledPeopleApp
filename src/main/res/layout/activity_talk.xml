@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="com.team4.smartwatch.TalkActivity">
+
+    <TextView
+        android:id="@+id/TalkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TALK"
+        android:textColor="@color/text_white"
+        android:textSize="40sp" />
+
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TalkText"
+        android:id="@+id/EditTextTalk"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/text_white"
+        android:textColorHint="@color/text_white"
+        android:hint="Enter the Text you wish to Speak!"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Speak"
+        android:id="@+id/speakButton"
+        android:layout_below="@+id/EditTextTalk"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
